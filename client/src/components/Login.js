@@ -34,7 +34,7 @@ const Login = (props) => {
         // where we are getting it from. the history object has 'push' function, which is where you
         // want to go, so it will take us to the todos page
         // tutorial to 'history' object: https://reactrouter.com/web/api/history
-        props.history.push("/todos");
+        props.history.push("/main");
       } else {
         // the system return an error message telling what is wrong
         setMessage(message);
