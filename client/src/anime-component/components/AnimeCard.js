@@ -4,6 +4,7 @@ import SubscribeService from "../../services/SubscribeService";
 function AnimeCard({ anime }) {
   const [subscribing, setSubscribing] = useState("Subscribe");
   console.log("anime");
+  console.log(subscribing);
 
   console.log(anime);
   // const checkAnimeSubcribeOrNot = () => {
@@ -17,6 +18,18 @@ function AnimeCard({ anime }) {
   //     return false;
   //   });
   // };
+  //========================
+  SubscribeService.getSubscribes().then((data) => {
+    for (var i = 0; i < data.subscribes.length; i++) {
+      if (data.subscribes[i].mal_id === anime.mal_id) {
+        setSubscribing("Unsubscribe");
+        console.log(subscribing);
+
+        return;
+      }
+    }
+  });
+  //====================================
 
   const onclick = () => {
     if (subscribing === "Subscribe") {
@@ -39,8 +52,22 @@ function AnimeCard({ anime }) {
       console.log(animeSubscribed);
       setSubscribing("Unsubscribe");
     } else if (subscribing === "Unsubscribe") {
-      setSubscribing("Subscribe");
+      //-----------------------
+      //let animeMalIdToDelete = 0;
+
+      SubscribeService.getSubscribes().then((data) => {
+        for (var i = 0; i < data.subscribes.length; i++) {
+          if (data.subscribes[i].mal_id === anime.mal_id) {
+            SubscribeService.deleteSubscribe(data.subscribes[i]._id);
+            //animeMalIdToDelete = data.subscribes[i].mal_id
+            return;
+          }
+        }
+      });
       SubscribeService.deleteSubscribe(anime.mal_id);
+
+      setSubscribing("Subscribe");
+      //-----------------------------
     }
   };
 

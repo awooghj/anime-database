@@ -12,7 +12,9 @@ export default function SubscribeItem(props) {
                   descending order, we will just output index plus
                   one */}
       <th scope="row">{props.subscribe.title}</th>
-      <td>{props.subscribe.image_url}</td>
+      <td>
+        <img src={props.subscribe.image_url} alt="" />
+      </td>
       <td>{props.subscribe.airing.toString()}</td>
       <td>{props.subscribe.synopsis}</td>
       <td>{props.subscribe.type}</td>
