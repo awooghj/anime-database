@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SubscribeService from "../../services/SubscribeService";
 
 function AnimeCard({ anime }) {
@@ -7,6 +7,7 @@ function AnimeCard({ anime }) {
   console.log(subscribing);
 
   console.log(anime);
+
   // const checkAnimeSubcribeOrNot = () => {
   //   TodoService.getTodos().then((data) => {
   //     for (var i = 0; i < data.todos.length; i++) {
@@ -19,16 +20,28 @@ function AnimeCard({ anime }) {
   //   });
   // };
   //========================
-  SubscribeService.getSubscribes().then((data) => {
-    for (var i = 0; i < data.subscribes.length; i++) {
-      if (data.subscribes[i].mal_id === anime.mal_id) {
-        setSubscribing("Unsubscribe");
-        console.log(subscribing);
+  useEffect(() => {
+    SubscribeService.getSubscribes().then((data) => {
+      for (var i = 0; i < data.subscribes.length; i++) {
+        if (data.subscribes[i].mal_id === anime.mal_id) {
+          setSubscribing("Unsubscribe");
+          console.log(subscribing);
 
-        return;
+          return;
+        }
       }
-    }
-  });
+    });
+  }, []);
+  // SubscribeService.getSubscribes().then((data) => {
+  //   for (var i = 0; i < data.subscribes.length; i++) {
+  //     if (data.subscribes[i].mal_id === anime.mal_id) {
+  //       setSubscribing("Unsubscribe");
+  //       console.log(subscribing);
+
+  //       return;
+  //     }
+  //   }
+  // });
   //====================================
 
   const onclick = () => {
