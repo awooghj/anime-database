@@ -55,7 +55,7 @@ function AnimeCard({ anime }) {
         type: anime.type,
         episodes: anime.episodes,
         score: anime.score,
-        members: anime.members,
+        subsribers: anime.members,
         start_date: anime.start_date,
         end_date: anime.end_date,
       };

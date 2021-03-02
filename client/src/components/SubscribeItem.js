@@ -15,14 +15,14 @@ export default function SubscribeItem(props) {
       <td>
         <img src={props.subscribe.image_url} alt="" />
       </td>
-      <td>{props.subscribe.airing.toString()}</td>
+      {/* <td>{props.subscribe.airing.toString()}</td> */}
       <td>{props.subscribe.synopsis}</td>
       <td>{props.subscribe.type}</td>
       <td>{props.subscribe.episodes}</td>
       <td>{props.subscribe.score}</td>
       <td>{props.subscribe.subsribers}</td>
       <td>{props.subscribe.start_date}</td>
-      <td>{props.subscribe.end_date}</td>
+      {/* <td>{props.subscribe.end_date}</td> */}
       <td>
         <button
           onClick={() => {

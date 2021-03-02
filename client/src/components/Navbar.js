@@ -64,6 +64,9 @@ export default function Navbar(props) {
         <Link to="/subscribes">
           <li className="nav-item nav-link">Subscribes</li>
         </Link>
+        <Link to="/season">
+          <li className="nav-item nav-link">Season</li>
+        </Link>
 
         {/* since there two roles for a user to be, so if you are an admin you see
         admin page, otherwise, you see null */}

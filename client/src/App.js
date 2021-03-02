@@ -8,6 +8,7 @@ import MainAnimePage from "./anime-component/MainAnimePage";
 import PrivateRoute from "./hocs/PrivateRoute";
 import UnPrivateRoute from "./hocs/UnPrivateRoute";
 import Subscribes from "./components/Subscribes";
+import Season from "./components/Season";
 
 // react-router is a routing system for react, so you have a main 'Router' and a
 // 'Route' component . the 'Route' component takes in a path and based on that path
@@ -44,6 +45,12 @@ function App() {
         path="/main"
         roles={["user", "admin"]}
         component={MainAnimePage}
+      />
+
+      <PrivateRoute
+        path="/season"
+        roles={["user", "admin"]}
+        component={Season}
       />
     </Router>
   );

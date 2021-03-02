@@ -1,0 +1,8 @@
+img {
+  float: left;
+  width: 11.5%;
+  height: 11.5%;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 5px;
+}

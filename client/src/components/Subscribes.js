@@ -50,14 +50,14 @@ export default function Subscribes() {
           {/* # sign is the place the user got in */}
           <th scope="col">title</th>
           <th scope="col">image</th>
-          <th scope="col">airing</th>
+          {/* <th scope="col">airing</th> */}
           <th scope="col">synopsis</th>
           <th scope="col">type</th>
           <th scope="col">episodes</th>
           <th scope="col">score</th>
           <th scope="col">subsribers</th>
           <th scope="col">start_date</th>
-          <th scope="col">end_date</th>
+          {/* <th scope="col">end_date</th> */}
         </tr>
       </thead>
       <tbody>
