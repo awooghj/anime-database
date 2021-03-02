@@ -16,6 +16,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import SubscribeService from "../services/SubscribeService";
+import "./SizeOfEachImageInList.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -128,9 +129,11 @@ export default function SingleSeasonalAnime(props) {
           Episodes: {props.anime.episodes}
           <br />
           Genre:
-          {props.anime.genres.map((genreTag) => {
-            return <GenreTag genreTag={genreTag} />;
-          })}
+          <div className="tagArrangement" style={{ display: "flex" }}>
+            {props.anime.genres.map((genreTag) => {
+              return <GenreTag genreTag={genreTag} />;
+            })}
+          </div>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
