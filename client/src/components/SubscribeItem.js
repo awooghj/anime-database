@@ -1,6 +1,7 @@
 import React from "react";
 import { ACTIONS } from "./Subscribes";
 import SubscribeService from "../services/SubscribeService";
+import "./SubscribeImage.css";
 
 export default function SubscribeItem(props) {
   console.log(props.subscribe);
@@ -13,7 +14,9 @@ export default function SubscribeItem(props) {
                   one */}
       <th scope="row">{props.subscribe.title}</th>
       <td>
-        <img src={props.subscribe.image_url} alt="" />
+        <div>
+          <img src={props.subscribe.image_url} alt="" className="subImage" />
+        </div>
       </td>
       {/* <td>{props.subscribe.airing.toString()}</td> */}
       <td>{props.subscribe.synopsis}</td>

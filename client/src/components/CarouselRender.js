@@ -11,7 +11,7 @@ export default function CarouselRender(props) {
     const temp = await fetch(
       `https://api.jikan.moe/v3/season/archive`
     ).then((res) => res.json());
-    SetAnimeList(temp.archive.slice(0, 30));
+    SetAnimeList(temp.archive.slice(0, 22));
   };
 
   useEffect(() => {

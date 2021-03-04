@@ -128,6 +128,8 @@ export default function SingleSeasonalAnime(props) {
           <br />
           Episodes: {props.anime.episodes}
           <br />
+          Subscribers: {props.anime.members}
+          <br />
           Genre:
           <div className="tagArrangement" style={{ display: "flex" }}>
             {props.anime.genres.map((genreTag) => {

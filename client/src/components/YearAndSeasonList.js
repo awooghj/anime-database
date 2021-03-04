@@ -16,13 +16,16 @@ import { green, purple } from "@material-ui/core/colors";
 import ButtonTemplates from "../material-ui-template/ButtonSetting";
 import ShowAllAnimeInThatSeason from "./ShowAllAnimeInThatSeason";
 import Season from "./Season";
+import yearlyBestAnimeService from "../services/YearlyBestAnimePicture";
+
 //
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 0,
+    paddingTop: "100%",
   },
 });
 
@@ -37,16 +40,12 @@ export default function SeasonAnimeStyle(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://cdn.myanimelist.net/images/anime/1777/108817.jpg"
+          image={yearlyBestAnimeService.yearlyBestAnime(year)}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {year}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
       </CardActionArea>

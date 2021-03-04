@@ -10,5 +10,5 @@ img {
 .tagArrangement {
   flex-wrap: wrap;
   overflow-y: auto;
-  margin-top: 5px;
+  margin-top: 2px;
 }
