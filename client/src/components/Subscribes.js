@@ -49,7 +49,6 @@ export default function Subscribes() {
         <tr>
           {/* # sign is the place the user got in */}
           <th scope="col">title</th>
-          <th scope="col">image</th>
           {/* <th scope="col">airing</th> */}
           <th scope="col">synopsis</th>
           <th scope="col">type</th>

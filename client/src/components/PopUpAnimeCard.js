@@ -2,7 +2,7 @@ import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import SingleSeasonalAnime from "./SingleSeasonalAnime";
-import "./SizeOfEachImageInList.css";
+import "./components-css/SizeOfEachImageInList.css";
 import { ImageOverlay } from "react-image-overlay-effect";
 
 export default function PopUpAnimeCard(props) {

@@ -16,7 +16,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import SubscribeService from "../services/SubscribeService";
-import "./SizeOfEachImageInList.css";
+import "./components-css/SizeOfEachImageInList.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {

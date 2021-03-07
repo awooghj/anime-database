@@ -1,0 +1,15 @@
+.trailer-popup-content {
+  /* overflow-y: initial !important;
+
+  overflow-y: auto; */
+  height: 80%;
+  width: auto;
+  align-items: center;
+  margin-left: 500px;
+  position: fixed;
+  top: 6%;
+  left: 10%;
+  background: rgb(143, 130, 145);
+  z-index: 1;
+  overflow: auto;
+}
