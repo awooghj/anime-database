@@ -37,9 +37,19 @@ export default function SubscribeItem(props) {
       <td>{props.subscribe.synopsis}</td>
       <td>{props.subscribe.type}</td>
       <td>{props.subscribe.episodes}</td>
-      <td>
+      <td className="first">
         {props.subscribe.score}
-        <RatingStatistic mal_id={props.subscribe.mal_id} />
+        <Popup
+          className="rating-popup"
+          trigger={<button>See the rating details!</button>}
+          position="center center"
+          modal
+          nested>
+          <RatingStatistic
+            mal_id={props.subscribe.mal_id}
+            totalScore={props.subscribe.score}
+          />
+        </Popup>
       </td>
       <td>{props.subscribe.subsribers}</td>
       <td>{props.subscribe.start_date}</td>
