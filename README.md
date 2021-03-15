@@ -8,6 +8,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 <!-- Horizontal Rule -->
 ---
 
+## Installing project
+
 <!-- Code Blocks -->
 In terminal, first you could call
 ```bash
