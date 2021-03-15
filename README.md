@@ -11,11 +11,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Installing project
 
 <!-- Code Blocks -->
+# Step 1:
+
 In terminal, first you could call
 ```bash
   npm install
 ```
-to install libraries for Node.js. After installing, call
+to install libraries for Node.js.
+
+# Step 2: 
+
+After installing, call
 ```bash
   cd client
 ```
@@ -23,6 +29,9 @@ and again install required libraries for React by calling
 ```bash
   npm install
 ```
+
+# Step 3:
+
 After intaling, first call 
 ```bash
   cd ..
