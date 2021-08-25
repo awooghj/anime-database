@@ -1,4 +1,4 @@
-# anime-database
+# Anime Database
 
 <!-- Italics -->
 AnimeDatabase helps you search and subscribe your favorite anime. You could also see other animes by checking seasonal releasing
