@@ -51,7 +51,7 @@ to execute frontend
 
 ## Demo
 
-### Register and Login the Account
+### Register and Login to the Account
 
 https://user-images.githubusercontent.com/71347217/130723343-f6de07d8-ef11-4168-add8-4904670b7885.mp4
 
