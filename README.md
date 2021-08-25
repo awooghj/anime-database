@@ -58,3 +58,12 @@ https://user-images.githubusercontent.com/71347217/130723343-f6de07d8-ef11-4168-
 ### Anime Released in Each Season
 
 https://www.youtube.com/watch?v=4ZN_lbZ8sY0
+
+### Subscribed Anime
+
+https://www.youtube.com/watch?v=JqWY7hTsKko
+
+### Searching and Subscribing Anime 
+
+https://user-images.githubusercontent.com/71347217/130728168-35dd22f8-04cf-4147-92af-f51d543d4776.mp4
+
