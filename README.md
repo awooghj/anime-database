@@ -1,11 +1,14 @@
 # Anime Database
 
 <!-- Italics -->
-AnimeDatabase helps you search and subscribe your favorite anime. You could also see other animes by checking seasonal releasing
+AnimeDatabase helps you search and subscribe your favorite anime. You could also browse other animes by checking seasonal releasing
 
-- Users are able to search the anime by name. The anime in searching result will show the describing status
-- In season page, each season of the year will show all the anime released in the season
+## User Stories
+- Users are able to search the anime by name. The anime in searching result will show the describing status (subscribed or un-ssubscribed)
+- In season page, each season of the year will show all the anime released in that season
+- The statistic (rating)
 - The subscribed anime will be added to the subscribes page of the user, who can hence check the trailers and the rating of the anime
+- If users deleted a subscribed anime, the anime will be removed from subscribes page
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
