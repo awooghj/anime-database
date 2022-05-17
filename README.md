@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 <!-- Horizontal Rule -->
 ---
 
-## Installing project
+## Project Setup
 Make sure you have installed [MongoDB](https://www.mongodb.com/try/download/community) locally in your operating system
 <!-- Code Blocks -->
 
