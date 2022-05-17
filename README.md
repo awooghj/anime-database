@@ -6,7 +6,7 @@ AnimeDatabase helps you search and subscribe your favorite anime. You could also
 ## User Stories
 - Users are able to search the anime by name. The anime in searching result will show the describing status (subscribed or un-ssubscribed)
 - In season page, each season of the year will show all the anime released in that season
-- The statistic (rating)
+- Users could check the real-time statistic (scores, subscribers) on the anime card updated by Jikan API
 - The subscribed anime will be added to the subscribes page of the user, who can hence check the trailers and the rating of the anime
 - If users deleted a subscribed anime, the anime will be removed from subscribes page
 
