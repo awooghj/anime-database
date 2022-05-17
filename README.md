@@ -1,7 +1,7 @@
 # Anime Database
 
 <!-- Italics -->
-AnimeDatabase helps you search and subscribe your favorite anime. You could also browse other animes by checking seasonal releasing
+AnimeDatabase helps you search and subscribe your favorite anime. You could also browse other animes by checking seasonal releasing.
 
 ## User Stories
 - Users are able to search the anime by name. The anime in searching result will show the describing status (subscribed or un-ssubscribed)
